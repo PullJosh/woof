@@ -15,6 +15,13 @@ body.woof-new
     .logo a
       transition none
       background-size 81px !important
+      
+    .link a span
+      font-weight 400
+      font-size 14px
+    
+    .mystuff > a, .messages > a
+      background-size 24px !important
 
 // old scratch
 body.woof:not(.editor)
@@ -22,7 +29,6 @@ body.woof:not(.editor)
   color black
   height auto
   min-height 100%
-  font-family Helvetica Neue, Helvetica, Arial, sans-serif
   
   .avatar img
     border-radius 3px
@@ -66,7 +72,7 @@ body.woof:not(.editor)
           padding 17px 15px 0
           height 33px
           line-height 1
-          font-weight 700
+          font-weight 400
         
         .logo
           //height 51px
@@ -223,3 +229,7 @@ body.woof:not(.editor)
       
       &:hover
         background-color shade(blue, 10%)
+
+// both scratches
+body.woof, body.woof-new
+  font-family Helvetica Neue, Roboto, Fira Sans, Helvetica, Arial, sans-serif
