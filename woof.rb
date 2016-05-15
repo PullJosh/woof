@@ -12,7 +12,7 @@ js = File.read 'source/woof.js'
 woof = "// ==UserScript==
 // @name         Woof!
 // @namespace    https://github.com/nanalan/woof
-// @version      0.3
+// @version      0.4
 // @description  A modern Scratch theme.
 // @author       nanalan
 // @match        https://scratch.mit.edu/*
