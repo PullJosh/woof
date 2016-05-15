@@ -17,7 +17,7 @@ body.woof-new
       background-size 81px !important
 
 // old scratch
-body.woof
+body.woof:not(.editor)
   background white
   color black
   height auto
@@ -198,23 +198,27 @@ body.woof
   .button, .button.grey
     border none
     background-image none
-    background-color orange
+    background-color transparent
     border-radius 3px
-    box-shadow 1px 1px 0 rgba(black, 0.1)
     outline none
-    color white !important
+    box-shadow none
+    color orange !important
     
     a
-      color white
+      color orange
 
     &:focus, &:active
       box-shadow none
 
     &:hover
-      background-color shade(orange, 10%)
+      background-color transparent
     
-    &.blue
+    &.blue, &#see-inside, &[data-control='post']
       background-color blue
+      color white !important
+      a
+        color white
+      box-shadow 1px 1px 0 rgba(black, 0.1)
       
       &:hover
         background-color shade(blue, 10%)
