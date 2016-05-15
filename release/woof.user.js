@@ -3,26 +3,21 @@
 // @name         Woof!
 // @namespace    https://github.com/nanalan/woof
 // @version      0.1
-// @description  A beautiful Scratch theme.
+// @description  A modern Scratch theme.
 // @author       nanalan
 // @match        https://scratch.mit.edu/*
+// @exclude      https://scratch.mit.edu/accounts/*
+// @exclude      https://scratch.mit.edu/site-api/*
 // @grant        none
-// @require      https://code.jquery.com/jquery-1.12.0.min.js
 // ==/UserScript==
 
 /* jshint ignore:start */
-window.addEventListener('load', function() {
+(function() {
   'use strict';
-  const css = 'body {  background: #fcfcfc;  color: #212121;  font-family: Helvetica Neue, Open Sans, Helvetica, Arial, sans-serif;}';
-  $('head').append('<!-- Woof! --><style id="woof">' + css + '</style>')
-$('head').append("<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,600' rel='stylesheet' type='text/css'>")
+  const css = 'body.woof-new #navigation {  border-bottom: none;}body.woof-new #navigation .logo a {  -webkit-transition: none;  transition: none;  background-size: 81px !important;}body.woof {  background: #fff;  color: #000;  height: auto;  min-height: 100%;  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;}body.woof .avatar img {  border-radius: 3px;}body.woof #content {  padding-top: 6em;}body.woof #topnav {  box-shadow: none;  height: 51px;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;  position: fixed;  box-shadow: 0 0 3px rgba(0,0,0,0.25);}body.woof #topnav .innerwrap {  height: 100%;  background-color: #25aff4;}body.woof #topnav .innerwrap .container {  height: 100%;  width: 942px;  margin: 0 auto;}body.woof #topnav .innerwrap .container li {  border: none;  height: 51px;  line-height: 51px;  background: transparent;}body.woof #topnav .innerwrap .container li:hover {  background: rgba(0,0,0,0.1);}body.woof #topnav .innerwrap .container > a,body.woof #topnav .innerwrap .container .site-nav > a,body.woof #topnav .innerwrap .container .account-nav > li > a {  position: relative;  border: none;  font-weight: 500;  color: #fff;  font-size: 14px;  margin: 0;  padding: 17px 15px 0;  height: 33px;  line-height: 1;  font-weight: 700;}body.woof #topnav .innerwrap .container .logo {  width: 80px;  -webkit-flex-shrink: 0;      -ms-flex-negative: 0;          flex-shrink: 0;  background-image: url("https://scratch.mit.edu/images/logo_sm.png");  background-repeat: no-repeat;  background-size: 81px;  background-position: center;  padding-left: 0;  padding-right: 0;}body.woof #topnav .innerwrap .container .logo span {  display: none;}body.woof #topnav .innerwrap .account-nav {  margin: 0;  height: 51px;}body.woof #topnav .innerwrap .account-nav .logged-in-user.open {  background-color: transparent !important;}body.woof #topnav .innerwrap .account-nav.logged-in > li .dropdown-menu {  background-color: #25aff4;  margin-top: 25px;  box-shadow: none;}body.woof #topnav .innerwrap .account-nav.logged-in > li .dropdown-menu li,body.woof #topnav .innerwrap .account-nav.logged-in > li .dropdown-menu li > a {  height: 36px;  line-height: 36px;}body.woof #topnav .innerwrap .account-nav.logged-in > li .dropdown-menu li form input[type=submit],body.woof #topnav .innerwrap .account-nav.logged-in > li .dropdown-menu li > a form input[type=submit] {  background-color: transparent;}body.woof #topnav .innerwrap .account-nav.logged-in > li > .messages-icon {  background: url("https://scratch.mit.edu/images/nav-notifications.png") no-repeat center;  background-size: 24px;  padding-left: 0;  padding-right: 0;}body.woof #topnav .innerwrap .account-nav.logged-in > li > .mystuff-icon {  background: url("https://scratch.mit.edu/images/mystuff.png") no-repeat center;  background-size: 24px;  padding-left: 0;  padding-right: 0;}body.woof #topnav .innerwrap .account-nav.logged-in > li .notificationsCount {  line-height: 17px;  margin-top: 4px;}body.woof #topnav .innerwrap .account-nav.logged-in > li .user-icon {  border: none;  border-radius: 3px;}body.woof #topnav .innerwrap .account-nav.logged-in > li .caret {  border: none;  background: url("https://scratch.mit.edu/images/dropdown.png") no-repeat center;  height: 20px;  width: 20px;  margin-left: 8px;  background-size: 50%;  opacity: 1;}body.woof #topnav form.search {  margin: 0 20px;}body.woof #topnav form.search .glass {  position: absolute;  background-color: transparent;  background-image: url("https://scratch.mit.edu/images/nav-search-glass.png");  background-repeat: no-repeat;  background-position: center;  background-size: 14px 14px;  width: 40px;  border: none;  box-shadow: none;  margin-top: 5px;  cursor: pointer;  height: 40px;}body.woof #topnav form.search #search-input {  -webkit-transition: 0.15s ease background-color;  transition: 0.15s ease background-color;  padding: 0;  padding-right: 10px;  padding-left: 40px;  width: calc(100% - 50px);  height: 40px;  color: #fff;  font-size: 14px;  outline: none;  display: inline-block;  margin: 0.5em 0;  margin-top: 5px;  box-shadow: none;  border: none;  background-color: rgba(0,0,0,0.1);  border-radius: 5px;  width: 197.28px;  -webkit-box-flex: 0;  -webkit-flex-grow: 0;      -ms-flex-positive: 0;          flex-grow: 0;}body.woof #topnav form.search #search-input:focus {  background-color: rgba(0,0,0,0.2);}body.woof #topnav form.search ::-webkit-input-placeholder {  color: rgba(255,255,255,0.75);}body.woof #topnav form.search ::-moz-placeholder {  color: rgba(255,255,255,0.75);}body.woof #topnav form.search :-ms-input-placeholder {  color: rgba(255,255,255,0.75);}body.woof #topnav form.search ::placeholder {  color: rgba(255,255,255,0.75);}body.woof a,body.woof input.link {  cursor: pointer;  color: #25aff4;}body.woof a:hover,body.woof input.link:hover {  text-decoration: none;}';
+  document.head.innerHTML += '<!-- Woof! -->\n<style id="woof">' + css + '</style>'
 
-const isNew = $('[data-reactid]').length > 0
-console.log('New Scratch?', isNew)
-
-let page = isNew ? $('.page') : $('body')
-let nav = isNew ? $('#navigation') : $('#topnav')
-
-//nav.remove()
-}, false);
+if(window.jQuery) document.body.classList.add('woof')
+else document.body.classList.add('woof-new')
+})();
 /* jshint ignore:end */

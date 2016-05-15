@@ -14,19 +14,20 @@ woof = "
 // @name         Woof!
 // @namespace    https://github.com/nanalan/woof
 // @version      0.1
-// @description  A beautiful Scratch theme.
+// @description  A modern Scratch theme.
 // @author       nanalan
 // @match        https://scratch.mit.edu/*
+// @exclude      https://scratch.mit.edu/accounts/*
+// @exclude      https://scratch.mit.edu/site-api/*
 // @grant        none
-// @require      https://code.jquery.com/jquery-1.12.0.min.js
 // ==/UserScript==
 
 /* jshint ignore:start */
-window.addEventListener('load', function() {
+(function() {
   'use strict';
   const css = '#{css}';
   #{js}
-}, false);
+})();
 /* jshint ignore:end */
 "
 
