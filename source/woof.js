@@ -1,3 +1,4 @@
+/* Woof! */
 document.head.innerHTML += '<!-- Woof! -->\n<style id="woof">' + css + '</style>'
 
 if(window.jQuery) document.body.classList.add('woof')

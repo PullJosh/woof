@@ -199,37 +199,84 @@ body.woof:not(.editor)
   .avatar
     border-radius 3px
   
-  .box .box-head, h2, h3, h4, h1
+  .box .box-head, h2, h3, h4, h1, .sub-list a, #tabs a
     color #6b6b6b
-  
-  .button, .button.grey
+    font-weight 200
+    
+  .box
+    box-shadow none
+
+  #tabs
+    .active
+      background-color blue
+      text-shadow none
+      
+      a
+        color white !important
+        text-shadow none
+
+  .button, .button.grey, button
     border none
     background-image none
-    background-color transparent
+    background-color #607d8b
     border-radius 3px
-    outline none
-    box-shadow none
-    color blue !important
+    outline 0
+    box-shadow 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+    color white !important
+    text-transform capitalize
+    text-shadow none
+    padding 0 1rem
+    transition box-shadow .3s ease-out
     
-    a
-      color blue
+    span.dropdown-toggle.black span.caret
+      border-top 4px solid white
+     
+    span.black
+      color white
+      filter brightness(10)
+
+    &[data-control="load-more"]
+      margin-bottom 20px
+
+    &.small
+      padding 0 .5rem
+
+    a, span
+      color white
+      letter-spacing .1px
+      line-height 14px !important
 
     &:focus, &:active
       box-shadow none
 
     &:hover
-      background-color transparent
+      box-shadow 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
     
     &.blue, &#see-inside, &[data-control='post']
       background-color blue
-      color white !important
-      a
-        color white
-      box-shadow 1px 1px 0 rgba(black, 0.1)
-      
-      &:hover
-        background-color shade(blue, 10%)
+    
+    &#see-inside
+      padding-left .5rem
+      padding-right .5rem
+
+    &.orange, &#share
+      background-color orange
+    
+  #share-bar
+    border 1px solid rgba(orange, 0.3)
+    background-color rgba(orange, 0.2)
+    font-weight 400
 
 // both scratches
 body.woof, body.woof-new
   font-family Helvetica Neue, Roboto, Fira Sans, Helvetica, Arial, sans-serif
+  
+  ::selection
+    color white
+    background-color orange
+  
+  .comment.removed
+    display none
+  
+  .reply[style="display: list-item;"]
+    display none !important
