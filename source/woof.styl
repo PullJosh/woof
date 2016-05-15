@@ -207,6 +207,8 @@ body.woof:not(.editor)
     box-shadow none
 
   #tabs
+    user-select none
+    
     .active
       background-color blue
       text-shadow none
@@ -220,6 +222,7 @@ body.woof:not(.editor)
 
   .button, .button.grey, button
     border none
+    user-select none
     background-image none
     background-color #607d8b
     border-radius 3px
@@ -254,14 +257,14 @@ body.woof:not(.editor)
     &:hover
       box-shadow 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15)
     
-    &.blue, &#see-inside, &[data-control='post']
+    &.blue, &#see-inside, &[data-control='post'], &[data-control="edit"]
       background-color blue
     
     &#see-inside
       padding-left .5rem
       padding-right .5rem
 
-    &.orange, &#share
+    &.orange, &#share, &[href="/projects/editor/"]
       background-color orange
     
   #share-bar
