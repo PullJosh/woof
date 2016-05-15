@@ -175,11 +175,46 @@ body.woof
         
       ::placeholder
         color hsla(0,0%,100%,.75)
-    
-  a, input.link
+  
+  // content
+
+  a:not(.button), input.link
     cursor pointer
     color blue
     
     &:hover
       text-decoration none
   
+  .user.thumb img
+    border none
+    border-radius 3px
+
+  .avatar
+    border-radius 3px
+  
+  .box .box-head, h2, h3, h4, h1
+    color #6b6b6b
+  
+  .button, .button.grey
+    border none
+    background-image none
+    background-color orange
+    border-radius 3px
+    box-shadow 1px 1px 0 rgba(black, 0.1)
+    outline none
+    color white !important
+    
+    a
+      color white
+
+    &:focus, &:active
+      box-shadow none
+
+    &:hover
+      background-color shade(orange, 10%)
+    
+    &.blue
+      background-color blue
+      
+      &:hover
+        background-color shade(blue, 10%)
