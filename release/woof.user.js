@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Woof!
 // @namespace    https://github.com/nanalan/woof
-// @version      0.2
+// @version      0.3
 // @description  A modern Scratch theme.
 // @author       nanalan
 // @match        https://scratch.mit.edu/*
