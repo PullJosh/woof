@@ -4,7 +4,7 @@
 ## For Scratch
 
 <p align="center">
-  <img src="https://crossorigin.me/http://alex.bates.is/woof-example.png" width="350"/>
+  <img src="https://crossorigin.me/http://alex.bates.is/woof-example.png" width="100%"/>
 </p>
 
 Woof adds the modern theme on the Scratch homepage (and some other changes) to the whole of Scratch.
