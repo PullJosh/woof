@@ -1,0 +1,36 @@
+#navigation {
+    border-bottom: none;
+}
+#navigation .logo a {
+    -webkit-transition: none;
+    transition: none;
+    background-size: 81px !important;
+}
+#navigation .link a span {
+    font-weight: 400;
+    font-size: 14px;
+}
+#navigation .mystuff > a,
+#navigation .messages > a {
+    background-size: 24px !important;
+}
+body {
+    font-family: Open Sans, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body::-moz-selection {
+    color: #fff;
+    background-color: #f90;
+}
+body::selection {
+    color: #fff;
+    background-color: #f90;
+}
+.comment.removed {
+    display: none;
+}
+.reply[style="display: list-item;"] {
+    display: none !important;
+}
+* {
+    text-shadow: none !important;
+}
